@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrifish Connect – Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <div class="logo-icon">🐟</div>
+                <span class="logo-text">Agrifish Connect</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="nav-item" data-page="products" id="nav-products">
+                   <span class="nav-icon">🐠</span>
+                   <span class="nav-text">Products</span>
+                </li>
+
+                <li class="nav-item" data-page="message" id="nav-message">
+                    <span class="nav-icon">💌</span>
+                    <span class="nav-text">Message</span>
+
+                </li>
+                <li class="nav-item" data-page="orders" id="nav-item">
+                    <span class="nav-icon">📦</span>
+                    <span class="nav-text">Orders</span>
+                </li>
+        
+                
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+        <!-- Top Bar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="breadcrumb">
+                    <span class="breadcrumb-item">Dashboard</span>
+                </div>
+            </div>
+            <div class="topbar-right">
+                <div class="notifications">
+                    
+                </div>
+                <div class="user-menu">
+                    <span id="admin-fullname"></span>
+                    <button class="btn logout-btn">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Summary Section -->
+            <section class="dashboard-summary">
+                <div class="summary-card">
+                    <div class="card-icon">📦</div>
+                    <div class="card-content">
+                        <h3>Total Stock</h3>
+                        <p id="total-stock" class="card-value">0 kg</p>
+                        
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon">💰</div>
+                    <div class="card-content">
+                        <h3>Total Value</h3>
+                        <p id="total-value" class="card-value">₱0.00</p>
+                        
+                    </div>
+                </div>
+                
+                
+
+            </section>
+
+            <!-- Inventory Management -->
+            <section class="inventory-section">
+                <div class="section-header">
+                    <h2>Product Inventory</h2>
+                    <div class="section-actions">
+                        <button class="btn btn-secondary" id="export-btn">Export</button>
+                        <button class="btn btn-primary" id="add-fish-btn">Add Product</button>
+                    </div>
+                </div>
+                
+                <div class="inventory-table-wrapper">
+                    <table class="inventory-table width-full">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" class="select-all"></th>
+                                <th>Image</th>
+                                <th>Product Name</th>
+                                <th>Stock</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inventory-body">
+                            <!-- Inventory rows will be rendered by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Modal for Add/Edit Fish -->
+    <div id="dashboard-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <h2 id="modal-action-title">Add/Edit Fish</h2>
+            <form id="fish-form">
+                <label for="fish-name" class="modal-label">Product Name:</label>
+                <input type="text" id="fish-name" class="modal-input" required>
+                <label for="fish-quantity" class="modal-label">Quantity (kg):</label>
+                <input type="number" id="fish-quantity" class="modal-input" min="0" step="0.1" required>
+                <label for="fish-price" class="modal-label">Price per kilo (₱):</label>
+                <input type="number" id="fish-price" class="modal-input" min="0" step="0.01" required>
+                <label for="fish-image" class="modal-label">Image URL:</label>
+                <input type="text" id="fish-image" class="modal-input" required>
+                <div class="modal-actions">
+                    <button type="submit" class="btn modal-btn">Save</button>
+                    <button type="button" id="cancel-dashboard-modal" class="btn modal-btn cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-overlay"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Agrifish Connect. Dashboard.</p>
+    </footer>
+
+    <!-- Dashboard JS -->
+    <script src="dashboard.js"></script>
+</body>
+</html>
+
+

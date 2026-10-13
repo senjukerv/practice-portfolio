@@ -1,0 +1,120 @@
+/* Reset & basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background for agriculture + fisheries theme */
+body {
+  min-height: 100vh; /* ensures full-screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    linear-gradient(rgba(0, 90, 200, 0.6), rgba(0, 120, 80, 0.7)),
+    url("http://localhost/agrifish/agrifishconnect/img/bg.png") center/cover no-repeat;
+  color: #fff;
+  padding: 20px; /* small padding for mobile view */
+  overflow-y: auto; /* allows scrolling if content exceeds screen */
+}
+
+/* Main register container */
+.register-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px 30px;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 380px;
+  min-height: 500px; /* 👈 ensures enough height but allows expansion */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+/* Title */
+.register-container h1 {
+  font-size: 1.7rem;
+  color: #c2ffcc;
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.register-container p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #e3f2fd;
+}
+
+/* Input fields */
+.register-container input,
+.register-container textarea,
+.register-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 0.95rem;
+  outline: none;
+  resize: none;
+}
+
+/* Label for dropdown */
+.register-container label {
+  display: block;
+  text-align: left;
+  margin-top: 8px;
+  color: #e0f7fa;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Button styling */
+.register-container button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #007bff, #28a745);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-container button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #c2ffcc;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Message display */
+#message {
+  margin-top: 8px;
+  color: #ffeb3b;
+  font-size: 0.85rem;
+}

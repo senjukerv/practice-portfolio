@@ -1,0 +1,127 @@
+/* --- Header container for buttons and search --- */
+.orders-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+/* Back button style */
+.back-btn {
+  background-color: #1e3a8a; /* dashboard blue */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Search container */
+.search-container {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#searchInput {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.95rem;
+  width: 200px;
+  transition: border-color 0.2s ease;
+}
+
+#searchInput:focus {
+  border-color: #1e3a8a;
+}
+
+/* Search button */
+#searchBtn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+#searchBtn:hover {
+  background-color: #1d4ed8;
+}
+
+/* --- Table styling --- */
+#orders-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+#orders-container th, 
+#orders-container td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+#orders-container th {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 600;
+}
+
+#orders-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#orders-container tr:hover {
+  background-color: #e0e7ff;
+}
+
+.action-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #d97706;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* --- No orders / loading message --- */
+.no-orders, .loading {
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
