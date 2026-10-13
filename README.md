@@ -33,7 +33,6 @@
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
 | Project 1 **[Agri Fish](https://github.com/senjukerv/senjukerv.github.io/tree/main/agrifish)** | Agrifish is a marketplace for local farmers to sell fresh crops| `CSS` `Java` `SQL` `HTML` |
-| 📊 **[Project Name 2](https://github.com/your-username/project-2)** | Brief description of the problem solved. | `Python` `FastAPI` `PostgreSQL` |
 
 ---
 
