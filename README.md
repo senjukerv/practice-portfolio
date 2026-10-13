@@ -1,15 +1,15 @@
 # Hi there, I'm Kervie Amado
 
-### 🚀 About Me
+###  About Me
 - Currently Studying as a **Computer Engineering** at **ICCT Collages**
-- 🔭 I’m currently Managing**Team Prism for our Project Nexus**
-- 🌱 I’m currently learning **New Skill / Technology**
-- 💬 Ask me about **How to manage team members, how to create simple codes**
-- 📫 How to reach me: **kervieamado@gmail.com** | **https://www.facebook.com/share/1KYhGPgnZn/**
+-  I’m currently Managing**Team Prism for our Project Nexus**
+-  I’m currently learning **New Skill / Technology**
+-  Ask me about **How to manage team members, how to create simple codes**
+-  How to reach me: **kervieamado@gmail.com** | **https://www.facebook.com/share/1KYhGPgnZn/**
 
 ---
 
-### 🛠️ Tech Stack & Tools
+###  Tech Stack & Tools
 
 **Languages:**  
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
