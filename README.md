@@ -1,4 +1,4 @@
-# # Hi there, I'm [Kervie Amado] 👋
+# Hi there, I'm Kervie Amado
 
 ### 🚀 About Me
 - Currently Studying as a **[Computer Engineering]** at **[ICCT Collages]**
