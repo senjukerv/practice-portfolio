@@ -32,7 +32,7 @@
 
 | Project | Description | Tech Stack |
 | :--- | :--- | :--- |
-| Project 1 **[Agri Fish](https://github.com/your-username/project-1)** | Agrifish is a marketplace for local farmers to sell fresh crops| `React` `Node.js` `MongoDB` |
+| Project 1 **[Agri Fish](https://github.com/senjukerv.github.io)** | Agrifish is a marketplace for local farmers to sell fresh crops| `React` `Node.js` `MongoDB` |
 | 📊 **[Project Name 2](https://github.com/your-username/project-2)** | Brief description of the problem solved. | `Python` `FastAPI` `PostgreSQL` |
 
 ---
